@@ -10,8 +10,15 @@ We conducted experiments under:
 - ipython 7.19.0
 - 1 Nvidia Titan X Maxwell GPU
 
-## Description of files
-* .py:
+## Description of directories
+* Imbalance directory: codes and preprocessing related to experiments of hardness via imbalance.
+* Diversification directory: codes and preprocessing related to experiments of hardness via diversification.
+* Closeness directory: codes and preprocessing related to experiments of hardness via closeness to the decision boundary.
+
+## Description of files in each directory:
+In each directory you will find the following files:
+* dataprocessing.py: the function that produces the transformed version of the TinyImageneNet dataset with custom hardness and noisiness levels per samples of different classes.
+* 
 
 
 ## Example to train
