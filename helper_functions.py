@@ -95,8 +95,9 @@ def train(epoch, net, trainloader, device, criterion, optimizer, model_name, num
         inputs, targets, or_targets = inputs.to(device), targets.to(device), or_targets.to(device)
         optimizer.zero_grad()
         outputs = net(inputs) 
-        
+
         # compute features of size 1280
+        # this if function should be adjusted if another architecture is used
         if model_name == 'mobilenet_v2':
             features = net.features(inputs)
             features = nn.functional.adaptive_avg_pool2d(features, (1, 1))
