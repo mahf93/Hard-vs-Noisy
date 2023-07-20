@@ -16,12 +16,12 @@ We conducted experiments under:
 * Diversification directory: codes and preprocessing related to experiments of hardness via diversification.
 * Closeness directory: codes and preprocessing related to experiments of hardness via closeness to the decision boundary.
 
-## Description of files in each directory:
+## Description of files in each directory
 In each directory you will find the following files:
 * dataprocessing.py: the function that produces the transformed version of the TinyImageneNet dataset with custom hardness and noisiness levels per samples of different classes.
 * train.ipynb: code that trains models on datasets with hard and noisy samples.
 
-## A Walk-through:
+## A Walk-through
 After training a model on the dataset with hard and noisy samples and saving the values in a checkpoint, you could use the data_partitioning.ipynb to partition the dataset.
 
 ## Access to the paper
