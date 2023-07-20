@@ -100,9 +100,15 @@ def train(epoch, net, trainloader, device, criterion, optimizer, model_name, num
         # this if function should be adjusted if another architecture is used
         if model_name == 'mobilenet_v2':
             features = net.features(inputs)
+    
             features = nn.functional.adaptive_avg_pool2d(features, (1, 1))
             # features = nn.AdaptiveAvgPool2d(1)(features)
             features = torch.flatten(features, 1)
+        if model_name == 'densenet':
+            features = net.features(inputs)
+            features = F.relu(features, inplace=True)
+            features = nn.functional.adaptive_avg_pool2d(features, (1, 1))
+            features = torch.flatten(features, 1)  
             
         for img_id, feature, tar, out, or_tar in zip(input_ids, features, targets, outputs, or_targets):
             l = criterion(out.unsqueeze(0), tar.unsqueeze(0))
