@@ -26,7 +26,7 @@ After training a model on the dataset with hard and noisy samples and saving the
 
 ## Access to the paper
 
-You can find the full version of the paper (including appendices) at https:
+You can find the full version of the paper (including appendices) at https://arxiv.org/abs/2307.10718.
 
 
 ## Citation
