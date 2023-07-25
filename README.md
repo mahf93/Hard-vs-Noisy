@@ -33,6 +33,10 @@ You can find the full version of the paper (including appendices) at https://arx
 
 To cite our work, for the arxiv version, use:
 ```
-@article{
+@article{forouzesh2023differences,
+  title={Differences Between Hard and Noisy-labeled Samples: An Empirical Study},
+  author={Forouzesh, Mahsa and Thiran, Patrick},
+  journal={arXiv preprint arXiv:2307.10718},
+  year={2023}
 }
 ```
